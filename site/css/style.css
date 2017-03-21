@@ -81,6 +81,9 @@ nav {
   width: 100vw;
   height: 52px;
   background-color: #009688;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .nav_content {
@@ -89,6 +92,39 @@ nav .nav_content {
   height: 52px;
   background-color: #009688;
   padding: 0 16px 0 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav #first_nav { /* First nav has no left margin because nav_content already has a 16px margin*/
+  margin-left: 0;
+}
+
+nav .nav_links {
+  width: 100px;
+  max-width: 100px;
+  height: 52px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease;
+}
+
+nav a, nav a:link, nav:visited {
+  text-decoration: none;
+}
+
+nav .nav_links:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .nav_links h1 {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .main_content {
@@ -98,4 +134,28 @@ nav .nav_content {
   background-color: white;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
   margin-top: 16px;
+  display: flex;
+}
+
+.media {
+  width: 100%;
+  max-width: 1300px;
+  height: 300px;
+  background-color: #212121;
+}
+
+#slideshow {
+    position: relative;
+    width: 65vw;
+    max-width: 1300px;
+    height: 240px;
+}
+
+#slideshow > div {
+    position: absolute;
+}
+
+#slideshow img {
+  width: 65vw;
+  height: 300px;
 }
