@@ -2,7 +2,10 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
+
+/* MAIN CONTAINER */
 
 .main_container {
   width: 100vw;
@@ -11,6 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* HEADER */
 
 header {
   width: 100vw;
@@ -26,9 +31,7 @@ header .header_content {
   width: 65vw;
   max-width: 1300px;
   height: 156px;
-  background-color: white;
   padding: 0 16px 0 16px;
-  border-bottom: 2px solid #212121;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,13 +39,12 @@ header .header_content {
 
 header .header_logo h1 {
   font-size: 30px;
-  font-family: sans-serif;
   margin: 0;
+  color: #212121;
 }
 
 header .header_search {
   width: 600px;
-  max-width: 600px;
   height: 36px;
   background-color: white;
   padding: 2px;
@@ -62,20 +64,29 @@ header .search_button {
   height: 36px;
   background-color: #009688;
   border: none;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  cursor: pointer;
 }
 
 header .header_cart {
   width: 200px;
-  max-width: 200px;
   height: 52px;
   background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+header .header_cart h1 {
+  font-size: 20px;
+  color: #212121;
+}
+
+/* NAVIGATION BAR */
 
 nav {
   width: 100vw;
@@ -97,15 +108,10 @@ nav .nav_content {
   align-items: center;
 }
 
-nav #first_nav { /* First nav has no left margin because nav_content already has a 16px margin*/
-  margin-left: 0;
-}
-
 nav .nav_links {
   width: 100px;
-  max-width: 100px;
   height: 52px;
-  padding: 16px;
+  padding: 0 16px 0 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,46 +122,142 @@ nav a, nav a:link, nav:visited {
   text-decoration: none;
 }
 
-nav .nav_links:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 nav .nav_links h1 {
   font-size: 15px;
-  font-family: sans-serif;
   color: white;
   text-align: center;
 }
 
+nav .nav_links:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .nav_links:hover .category {
+  display: flex;
+}
+
+nav .category {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 208px;
+  z-index: 1;
+  display: none;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+nav .category_block {
+  margin: 16px;
+  color: #212121;
+}
+
+nav .category_block h1 {
+  color: #212121;
+  font-size: 20px;
+  margin: 16px;
+}
+
+nav .category_block h3 {
+  color: #212121;
+  font-size: 15px;
+  margin: 16px;
+}
+
+/* MAIN CONTENT */
+
 .main_content {
   width: 65vw;
   max-width: 1300px;
-  height: 120vh;
+  padding: 16px;
   background-color: white;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
   margin-top: 16px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .media {
-  width: 100%;
+  width: 65vw;
   max-width: 1300px;
   height: 300px;
   background-color: #212121;
 }
 
+.news {
+  width: 65vw;
+  max-width: 1300px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 16px 0;
+}
+
+.news h1 {
+  font-size: 20px;
+  color: #212121;
+}
+
+.news hr {
+  width: 526px;
+}
+
+.news_content {
+  width: 65vw;
+  max-width: 1300px;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news_block {
+  width: 280px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.news_block3 {
+  width: 280px;
+  height: 600px;
+  background-color: #212121;
+  margin: 16px;
+}
+
+.news_block2 {
+  display: flex;
+  flex-grow: 1;
+  margin: 16px;
+  background-color: #212121;
+}
+
+/* SLIDESHOW */
+
 #slideshow {
-    position: relative;
-    width: 65vw;
-    max-width: 1300px;
-    height: 240px;
+  width: 65vw;
+  max-width: 1300px;
+  height: 300px;
 }
 
 #slideshow > div {
-    position: absolute;
+  position: absolute;
 }
 
 #slideshow img {
   width: 65vw;
+  max-width: 1300px;
   height: 300px;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  height: 400px;
+  background-color: #009688;
+  margin-top: 16px;
 }
