@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
 /* MAIN CONTAINER */
 
 .main_container {
@@ -28,7 +32,7 @@ header {
 }
 
 header .header_content {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   height: 156px;
   padding: 0 16px 0 16px;
@@ -79,6 +83,7 @@ header .header_cart {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: #212121;
 }
 
 header .header_cart h1 {
@@ -98,7 +103,7 @@ nav {
 }
 
 nav .nav_content {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   height: 52px;
   background-color: #009688;
@@ -137,13 +142,15 @@ nav .nav_links:hover .category {
 }
 
 nav .category {
+  width: 70vw;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 208px;
+  left: 15vw;
   z-index: 1;
   display: none;
-  max-width: 800px;
+  max-width: 1300px;
   flex-wrap: wrap;
 }
 
@@ -167,7 +174,7 @@ nav .category_block h3 {
 /* MAIN CONTENT */
 
 .main_content {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   padding: 16px;
   background-color: white;
@@ -179,14 +186,14 @@ nav .category_block h3 {
 }
 
 .media {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   height: 300px;
   background-color: #212121;
 }
 
-.news {
-  width: 65vw;
+.content_title {
+  width: 70vw;
   max-width: 1300px;
   height: 52px;
   display: flex;
@@ -195,17 +202,18 @@ nav .category_block h3 {
   padding: 16px 0 16px 0;
 }
 
-.news h1 {
+.content_title h1 {
   font-size: 20px;
   color: #212121;
+  text-align: center;
 }
 
-.news hr {
-  width: 526px;
+.content_title hr {
+  width: 20vw;
 }
 
 .news_content {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   max-width: 1300px;
   display: flex;
@@ -235,10 +243,45 @@ nav .category_block h3 {
   background-color: #212121;
 }
 
+/* KUNDVAGN */
+
+.kundvagn_content {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.kundvagn_labels {
+  display: flex;
+  height: 52px;
+}
+
+.l1 {
+  display: flex;
+  flex-grow: 3;
+  border: 1px solid #212121;
+  margin: 0px 4px 0px 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.l2 {
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid #212121;
+  margin: 0px 4px 0px 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.kundvagn_labels h1 {
+  font-size: 20px;
+}
+
 /* SLIDESHOW */
 
 #slideshow {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   height: 300px;
 }
@@ -248,7 +291,7 @@ nav .category_block h3 {
 }
 
 #slideshow img {
-  width: 65vw;
+  width: 70vw;
   max-width: 1300px;
   height: 300px;
 }
