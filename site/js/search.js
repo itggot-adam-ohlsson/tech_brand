@@ -10,7 +10,7 @@ function recent() {
   var input = document.querySelector("input").value.toLowerCase();
   document.querySelector(".search_result").innerHTML = "";
   for (i = 0; i < searches.length; i++) {
-    if (searches[i].includes(input) && input.length > 2) {
+    if (searches[i].includes(input) && input.length > 1) {
       var tiles = document.createElement("div");
       document.querySelector(".search_result").appendChild(tiles);
       tiles.className = "search_tiles";
@@ -28,7 +28,13 @@ function search() {
   if (searches.includes(input)) {
     window.location.assign(input + ".html");
   }
-  else {
-
-  }
 }
+
+$( ".search_result" ).click(function() {
+  var input = $(this).attr('.search_result');
+  console.log(input);
+
+  if (searches.includes(input)) {
+    window.location.assign(input + ".html");
+  }
+});
