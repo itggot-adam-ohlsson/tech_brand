@@ -9,6 +9,43 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
+.button {
+  width: 100px;
+  height: 36px;
+  background-color: #009688;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 16px;
+}
+
+.buttontext {
+  font-size: 15px;
+}
+
+.artikel {
+  width: 200px;
+  height: 56px;
+  background-color: #009688;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+  bottom: 16px;
+  right: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(000, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.artikel h1 {
+  font-size: 20px;
+}
+
 /* MAIN CONTAINER */
 
 .main_container {
@@ -272,6 +309,22 @@ nav .category_block h3 {
   background-color: #212121;
 }
 
+#samsung {
+  background-image: url(../img/samsung.png);
+}
+
+#ryzennews {
+  background-image: url(../img/ryzennews.png);
+}
+
+#buildcomp {
+  background-image: url(../img/buildcomp.png);
+}
+
+#learnmore {
+  background-image: url(../img/learnmore.png);
+}
+
 /* KUNDVAGN */
 
 .kundvagn_content {
@@ -362,15 +415,14 @@ nav .category_block h3 {
   flex-direction: column;
 }
 
-.search_content h1 {
-  font-size: 20px;
+.search_content .search_title {
   font-weight: normal;
+  font-size: 20px;
 }
 
 .search_block {
   width: 70vw;
   max-width: 1300px;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,10 +434,33 @@ nav .category_block h3 {
   height: 208px;
   background-color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid #212121;
   margin: 5px;
+  color: #212121;
+}
+
+.search_blocks .left {
+  margin-left: 16px;
+}
+
+.search_blocks div {
+  display: flex;
+  align-items: center;
+}
+
+.search_blocks .product_name {
+  font-size: 20px;
+  margin-left: 16px;
+}
+
+.search_blocks .product_price {
+  font-size: 20px;
+}
+
+.product_id {
+  display: none;
 }
 
 /* SLIDESHOW */
