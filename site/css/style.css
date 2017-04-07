@@ -19,6 +19,8 @@ a, a:link, a:visited {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   color: white;
   margin: 16px;
+  padding: 0 16px 0 16px;
+  cursor: pointer;
 }
 
 .buttontext {
@@ -208,7 +210,7 @@ nav .nav_links:hover .category {
 }
 
 nav .category {
-  width: 50vw;
+  width: 40vw;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -329,6 +331,7 @@ nav .category_block h3 {
 
 .kundvagn_content {
   width: 70vw;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
 }
@@ -402,7 +405,6 @@ nav .category_block h3 {
 .checkout_content {
   width: 70vw;
   padding: 16px;
-  background-color: red;
   display: flex;
   justify-content: space-around;
 }
@@ -445,6 +447,7 @@ nav .category_block h3 {
   background-color: white;
   padding: 16px;
   margin: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .order_paymethod {
@@ -458,11 +461,11 @@ nav .category_block h3 {
 }
 
 .zip_nr div {
-  margin: 8px;
+  margin-right: 16px;
 }
 
 #zip, #mnr {
-  width: 134px;
+  width: 140px;
 }
 
 .slutfor {
@@ -473,6 +476,25 @@ nav .category_block h3 {
 
 input::-webkit-input-placeholder {
   padding-left: 16px;
+}
+
+.thanks {
+  width: 70vw;
+  max-width: 1300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks_content {
+  display: flex;
+  margin: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thanks_purchase {
+  font-size: 50px;
 }
 
 /* TECH SWITCH */
@@ -502,9 +524,9 @@ input::-webkit-input-placeholder {
 }
 
 .techswitch_forms form input {
-  width: 500px;
-  height: 48px;
-  margin: 26px;
+  width: 300px;
+  height: 36px;
+  margin: 8px;
   font-size: 20px;
 }
 
@@ -515,6 +537,12 @@ input::-webkit-input-placeholder {
   background-color: #009688;
   color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.techswitch_buttons {
+  width: 300px;
+  display: flex;
+  align-items: center;
 }
 
 /* SEARCH */
@@ -603,6 +631,42 @@ footer {
   height: 400px;
   background-color: #009688;
   margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h1 {
+  color: white;
+}
+
+.footer_top h1 {
+  font-size: 20px;
+}
+
+.footer_top, .footer_bottom {
+  width: 70vw;
+  max-width: 1300px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+#company_name {
+  font-size: 40px;
+}
+
+.footer_mid {
+  display: flex;
+  width: 20vw;
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+.footer_mid img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1350px) {

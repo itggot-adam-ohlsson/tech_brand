@@ -21,7 +21,6 @@
             <button type="submit" class="search_button">
               <i class="material-icons">search</i>
             </button>
-            <span class="search_result"></span>
           </div>
           <div class="header_cart">
             <i class="material-icons">shopping_cart</i>
@@ -196,7 +195,7 @@
                 <h1>Fynda</h1>
               </div>
             </a>
-            <a href="#">
+            <a href="techswitch.html">
               <div class="nav_links">
                 <h1>TechSwitch</h1>
               </div>
@@ -204,8 +203,42 @@
           </div>
         </nav>
       </header>
-      <div class="search_content">
-        <h1>Sökningen gav tyvärr inga resultat</h1>
+      <div class="main_content">
+        <div class="content_title">
+          <hr>
+          <h1>Betalning &amp; order översikt</h1>
+          <hr>
+        </div>
+        <div class="search_blocks">
+          <div class="left">
+            <img src="./img/i7.jpg" alt="">
+            <h1 class="product_name">Intel Core i7-7700 Kaby Lake Processor</h1>
+          </div>
+        </div>
+        <div class="checkout_content">
+          <div class="checkout_content_left">
+            <h1>Kortnummer</h1>
+            <input type="text">
+            <h1>Säkerhetskod (xxx)</h1>
+            <input type="text">
+            <h1>Kortägare</h1>
+            <input type="text">
+            <div class="slutfor">
+              <a href="pay.html"><div class="button">
+                <h2 class="buttontext">BETALA</h1>
+              </div></a>
+            </div>
+          </div>
+          <div class="checkout_content_right">
+            <div class="order_overview">
+              <h1>Order översikt</h1>
+              <hr>
+              <p>Artiklar: 1</p>
+              <p>Frakt: 69:-</p>
+              <p>Totalt: 3598:-</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer class="footer">
@@ -236,5 +269,6 @@
     <script src="./js/scroll.js"></script>
     <script src="./js/mobilemenu.js"></script>
     <script src="./js/search.js"></script>
+    <script src="./js/amount.js"></script>
   </body>
 </html>
