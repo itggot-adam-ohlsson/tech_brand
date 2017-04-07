@@ -354,10 +354,125 @@ nav .category_block h3 {
   margin: 0px 4px 0px 4px;
   justify-content: center;
   align-items: center;
+  color: #212121;
 }
 
 .kundvagn_labels h1 {
   font-size: 20px;
+}
+
+.amount {
+  width: 150px;
+  height: 26px;
+  margin-right: 72px;
+  display: flex;
+}
+
+.amount h1 {
+  font-size: 15px;
+}
+
+.amount_comp {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #212121;
+  cursor: pointer;
+}
+
+.amount_amount {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.to_checkout {
+  width: 70vw;
+  max-width: 1300px;
+  height: 36px;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* CHECKOUT */
+
+.checkout_content {
+  width: 70vw;
+  padding: 16px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.checkout_content_left, .checkout_content_right {
+  width: 332px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.checkout_content div h1 {
+  font-size: 20px;
+  color: #212121;
+}
+.checkout_content div input {
+  width: 300px;
+  height: 36px;
+  font-size: 20px;
+}
+
+.order_overview {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 8px;
+}
+
+.order_overview hr {
+  width: 300px;
+}
+
+.order_overview p {
+  margin-top: 8px;
+}
+
+.order_giftcard {
+  width: 300px;
+  background-color: white;
+  padding: 16px;
+  margin: 8px;
+}
+
+.order_paymethod {
+  width: 300px;
+  margin: 8px;
+}
+
+.zip_nr {
+  width: 300px;
+  display: flex;
+}
+
+.zip_nr div {
+  margin: 8px;
+}
+
+#zip, #mnr {
+  width: 134px;
+}
+
+.slutfor {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 16px;
 }
 
 /* TECH SWITCH */
