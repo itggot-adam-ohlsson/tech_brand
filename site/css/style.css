@@ -309,6 +309,7 @@ nav .category_block h3 {
   flex-grow: 1;
   margin: 16px;
   background-color: #212121;
+  background-size: cover;
 }
 
 #samsung {
@@ -325,6 +326,18 @@ nav .category_block h3 {
 
 #learnmore {
   background-image: url(../img/learnmore.png);
+}
+
+#nyhet {
+  background-image: url(../img/nyhet.png);
+}
+
+#rea2 {
+  background-image: url(../img/rea2.png);
+}
+
+#var {
+  background-image: url(../img/var.png);
 }
 
 /* KUNDVAGN */

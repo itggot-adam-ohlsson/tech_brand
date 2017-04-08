@@ -16,3 +16,5 @@ var startPrice = parseInt(document.querySelector(".product_price").innerHTML);
     amount.innerHTML = n;
     price.innerHTML = parseInt(price.innerHTML) - startPrice + ":-";
   });
+
+// Funktion för att välja antal av samma produkt i kundvagnen.
